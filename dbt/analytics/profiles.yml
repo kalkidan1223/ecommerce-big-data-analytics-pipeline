@@ -1,0 +1,14 @@
+analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../../data/processed/analytics.duckdb'
+      threads: 4
+      timeout_seconds: 300
+      
+    prod:
+      type: duckdb
+      path: '../../data/processed/analytics.duckdb'
+      threads: 8
+      timeout_seconds: 600

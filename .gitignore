@@ -1,0 +1,115 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# PySpark
+.spark-*
+spark-events/
+
+# DuckDB
+*.duckdb
+*.duckdb-shm
+*.duckdb-wal
+analytics.duckdb
+
+# Airflow
+airflow/logs/*
+airflow/airflow.db
+airflow/airflow-webserver.pid
+airflow/*.pid
+airflow/*.log
+airflow/webserver_config.py
+airflow/unittests.cfg
+airflow/standalone_admin_password.txt
+
+# dbt
+dbt/analytics/target/
+dbt/analytics/dbt_packages/
+dbt/analytics/logs/
+dbt/analytics/.user.yml
+
+# Data Files (Keep directory structure)
+data/raw/*
+data/processed/*
+data/powerbi/*
+data/warehouse/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/powerbi/.gitkeep
+!data/warehouse/.gitkeep
+
+# Dashboard Files (Keep project structure)
+dashboard/*.csv
+dashboard/*.pbix
+dashboard/*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Build & Distribution
+dist/
+build/
+*.egg-info/
+*.egg
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+logs/
+*.log
+*.pot
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+*.bak
+*.backup
+
+# Documentation Build
+site/
+docs/_build/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Lock files
+poetry.lock
+Pipfile.lock
