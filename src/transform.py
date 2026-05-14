@@ -1,3 +1,48 @@
+# ============================================================
+# Data Transformation Module
+# ------------------------------------------------------------
+# This module contains the DataTransformer class used for
+# cleaning, transforming, and aggregating e-commerce datasets
+# using PySpark.
+#
+# Features:
+# - Cleans missing and invalid data
+# - Standardizes date and numeric formats
+# - Creates derived business metrics
+# - Aggregates order, payment, and customer summaries
+# - Prepares data for analytics and BI reporting
+#
+# Main Transformations:
+# 1. Orders Transformation
+#    - Converts timestamp columns to date format
+#    - Cleans order status values
+#    - Creates year-month aggregation field
+#
+# 2. Payments Transformation
+#    - Cleans payment values
+#    - Standardizes payment types
+#    - Handles missing installments
+#
+# 3. Items Transformation
+#    - Cleans item pricing data
+#    - Calculates total item value
+#
+# 4. Order Summary Aggregation
+#    - Combines orders, payments, and items
+#    - Calculates totals and metrics per order
+#
+# 5. Customer Metrics
+#    - Computes customer lifetime value
+#    - Calculates average order value
+#    - Identifies first and last order dates
+#
+# Technologies:
+# - PySpark DataFrame API
+# - Spark SQL Functions
+#
+# Author: Your Name
+# Project: Retail Sales ETL Pipeline
+# ============================================================
 import logging
 from typing import Dict
 from pyspark.sql import DataFrame
