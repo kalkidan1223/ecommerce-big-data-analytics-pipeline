@@ -1,5 +1,6 @@
 """
 Main pipeline orchestration module.
+
 Coordinates the entire ETL process: Extract -> Transform -> Load
 """
 
