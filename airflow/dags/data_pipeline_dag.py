@@ -1,6 +1,6 @@
 """
 Airflow DAG for Data Pipeline Orchestration.
-Schedules and monitors the complete ETL process with detailed logging and error handling.
+Schedules,and monitors the complete ETL process with detailed logging and error handling.
 """
 
 from datetime import datetime, timedelta
