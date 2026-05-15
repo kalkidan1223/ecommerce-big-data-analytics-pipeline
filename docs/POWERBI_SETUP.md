@@ -1,4 +1,4 @@
-# Power BI Dashboard Setup Guide
+## Power BI Dashboard Setup Guide
 
 ## Overview
 
